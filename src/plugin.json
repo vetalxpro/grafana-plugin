@@ -1,0 +1,31 @@
+{
+  "name": "SignifAI",
+  "id": "grafana-signifai.io-datasource",
+  "type": "datasource",
+
+  "partials": {
+    "config": "public/app/plugins/datasource/signifai.io/partials/config.html"
+  },
+
+  "metrics": true,
+  "annotations": false,
+  "alerting": true,
+
+  "info": {
+    "description": "SignifAI Datasource",
+    "author": {
+      "name": "SignifAI",
+      "url": "https://signifai.io/"
+    },
+    "logos": {
+      "small": "img/signifai-logo.png",
+      "large": "img/signifai-logo.png"
+    },
+    "version": "1.0.0",
+    "updated": "2017-01-03"
+  },
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": [ ]
+  }
+}

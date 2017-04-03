@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Query Editor</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1 class="mainTitle black">Query Editor</h1>
+
+    <div class="container clearfix">
+        <div class="card">
+            <label for="select1" class="label">Method</label>
+            <select name="" id="select1" class="inputMain">
+                <option value="" selected>Match</option>
+                <option value="">another</option>
+            </select>
+        </div>
+
+        <div class="card">
+            <h2>Match</h2>
+
+            <label for="" class="label">NAME : </label>
+            <input type="text" class="inputMain" placeholder="Name">
+            <br><br>
+
+            <label for="" class="label">AGGREGATION : </label>
+            <select name="" id="select1" class="inputMain">
+                <option value="" selected>AVG</option>
+                <option value="">another aggr.</option>
+            </select>
+            <br><br>
+
+            <label for="" class="label">ATTRIBUTES : </label>
+            <input type="text" class="inputMain w_100" placeholder="time_period" value="time_period"> = 
+            <input type="text" class="inputMain w_100" placeholder="number"> 
+            <input type="text" class="inputMain w_100" placeholder="us-east">
+            <button class="btn"> + </button>
+            <br><br>
+
+            <label for="" class="label">SETTINGS : </label>
+            <input type="text" class="inputMain w_100" placeholder="setting_1">
+            <button class="btn"> + </button>
+            <br><br>
+
+            <button class="btn" id="sendBtn"> Send </button>
+            <br>
+            <h5 id="statusText"></h5>
+        </div>
+    </div>
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script src="./scripts.js"></script>
+</body>
+</html>
