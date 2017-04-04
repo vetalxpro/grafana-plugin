@@ -9,10 +9,11 @@ export class GenericDatasourceQueryCtrl extends QueryCtrl {
     this.scope = $scope;
     this.uiSegmentSrv = uiSegmentSrv;
 
+
     this.signifaiQuery = new SignifaiQuery($scope);
 
-    this.target = this.target;
-    this.target.rootQueryFragment = this.target.rootQueryFragment;
+    // this.target = this.target;
+    // this.target.rootQueryFragment = this.target.rootQueryFragment;
   }
 
   getCollapsedText() {

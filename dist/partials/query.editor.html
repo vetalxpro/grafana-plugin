@@ -5,13 +5,17 @@
     <div class="gf-form">
       <label class="gf-form-label query-keyword">TYPE</label>
       <div class="gf-form-select-wrapper">
-        <select class="gf-form-input gf-size-auto ng-pristine ng-valid ng-not-empty ng-touched" ng-model="ctrl.target.rootQueryFragment">
-          <option ng-repeat="fragment in ctrl.signifaiQuery.fragments" value="{{fragment.name}}">{{fragment.label}}</option>
+        <select class="gf-form-input gf-size-auto ng-pristine ng-valid ng-not-empty ng-touched"
+                ng-model="ctrl.target.rootQueryFragment">
+          <option ng-repeat="fragment in ctrl.signifaiQuery.fragments" value="{{fragment.name}}">{{fragment.label}}
+          </option>
         </select>
       </div>
     </div>
-
-    <div ng-if="ctrl.target.rootQueryFragment" ng-bind-html="templates[ctrl.target.rootQueryFragment]" class="gf-form"></div>
-
   </div>
+  <div ng-if="ctrl.target.rootQueryFragment" ng-switch on="ctrl.target.rootQueryFragment">
+    <div ng-switch-when="match">HOME</div>
+  </div>
+
+
 </query-editor-row>

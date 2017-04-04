@@ -73,8 +73,8 @@ System.register(['app/plugins/sdk', './signifaiQuery'], function (_export, _cont
 
           _this.signifaiQuery = new SignifaiQuery($scope);
 
-          _this.target = _this.target;
-          _this.target.rootQueryFragment = _this.target.rootQueryFragment;
+          // this.target = this.target;
+          // this.target.rootQueryFragment = this.target.rootQueryFragment;
           return _this;
         }
 
